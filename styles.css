@@ -35,14 +35,14 @@ header > div {
 .logo {
   width: 35px;
 }
-nav ul {
+.main-nav ul {
   display: flex;
   gap: 20px;
   align-items: center;
   list-style: none;
   text-decoration: none;
 }
-nav ul li a {
+.main-nav ul li a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
@@ -217,8 +217,8 @@ footer {
     url("assets/get-involve.jpg");
   color: var(--secondary-color);
   text-align: center;
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 .about-hero h1 {
   font-size: 2.5rem;
@@ -229,8 +229,8 @@ footer {
   max-width: 600px;
   margin: 0 auto;
 }
-.about-content{
-    padding-block: 30px;
+.about-content {
+  padding-block: 30px;
 }
 .grid-container {
   display: grid;
@@ -298,22 +298,44 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
 }
 form input,
 form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 textarea {
-    resize: vertical;
-    min-height: 200px;
+  resize: vertical;
+  min-height: 200px;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-nav ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+.mobile-nav ul li {
+  margin: 10px 0;
+}
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid white 1px;
+
 }
 
 /* =============================== tablet below ================ */
@@ -342,7 +364,22 @@ textarea {
     display: block;
     cursor: pointer;
   }
-  nav {
+  .main-nav {
     display: none;
+  }
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    text-align: left;
+    z-index: 1000;
+    width: 100%;
   }
 }
