@@ -5,38 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EALF Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <img src="" alt="">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programmes.html">programmes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="assets/ealf-logo-small.jpg" alt="ealf logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" class="mobile-toggle" style="fill: currentColor;width: 35px;"
+                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+            </svg>
+        </div>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Welcome to the Evolving African Leaders Foundation (EALF)</h1>
-                <p>Empowering African Lives Foundation (EALF) is dedicated to improving the lives of individuals across
-                    Africa through education, health, and community development.</p>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+        <section class="hero">
+            <div class="swiper mySwiper">
+                <div class="hero-overlay">
+                    <h1 data-aos="zoom-in" data-aos-duration="1000">Welcome to the Evolving African Leaders Foundation (EALF)</h1>
+                    <p data-aos="zoom-in" data-aos-duration="1000">Empowering African Lives Foundation (EALF) is dedicated to improving the lives of individuals
+                        across Africa through education, health, and community development.</p>
+                    <a href="contact.html" data-aos="zoom-in" data-aos-duration="1000" class="btn">Contact Us</a>
                 </div>
-            </div>
-            <div>
-                <img src="" alt="">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/hero-new.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/hero-new.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/hero-new.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section>
+        <section class="who-we-are-wrapper">
             <div>
                 <h2>WHO WE ARE</h2>
                 <p>EALF is a non-profit organization passionate about empowering young Africans to take the lead in
@@ -44,39 +54,61 @@
                     education, and impactful programmes, we are raising a generation that leads with integrity,
                     innovation, and purpose.</p>
             </div>
-            <div>
-                <img src="" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/who-we-are.jpg" alt="">
             </div>
         </section>
-        <section>
-            <div>
-                <img src="" alt="">
+        <section class="what-we-are-wrapper">
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/what-we-are.jpg" alt="">
             </div>
             <div>
                 <h2>WHAT WE DO</h2>
-                <ul>
+                <!-- <ul>
                     <li>Leadership training & mentorship</li>
                     <li>Youth empowerment projects</li>
                     <li>Community and civic initiatives</li>
                     <li>Sustainable development campaigns</li>
-                </ul>
+                </ul> -->
+                <p>We focus on Leadership training, youth empowerment projects, community and civic initiatives, and
+                    sustainable development campaigns aimed at creating long-term impact across African nations</p>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>GET INVOLVED</h2>
-                <p>Join us in our mission to empower African leaders of tomorrow. Whether you are an individual,
-                    organization, or corporate partner, your support can make a difference.</p>
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
+        <section class="get-involved-wrapper">
+            <h2 data-aos="zoom-in" data-aos-duration="1000">GET INVOLVED</h2>
+            <p data-aos="zoom-in" data-aos-duration="1000">Join us in our mission to empower African leaders of tomorrow. Whether you are an individual,
+                organization, or corporate partner, your support can make a difference.</p>
+            <a href="contact.html" data-aos="zoom-in" data-aos-duration="1000" class="btn">Contact Us</a>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Evolving African Leaders Foundation (EALF). All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        AOS.init();
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //   navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            //   },
+        });
+    </script>
 </body>
 
 </html>
