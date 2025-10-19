@@ -405,9 +405,18 @@
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
             centeredSlides: true,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            speed: 2000,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
+            },
+            zoom: {
+                maxRatio: 1.2, // Maximum zoom level
+                minRatio: 1,   // Minimum zoom level (original size)
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -418,6 +427,11 @@
             //     prevEl: ".swiper-button-prev",
             //   },
         });
+        swiper.on("slideChangeTransitionStart", function () {
+            swiper.zoom.in();
+        });
+
+
         var partnerSwiper = new Swiper(".partners-list", {
             slidesPerView: 5,
             spaceBetween: 10,
