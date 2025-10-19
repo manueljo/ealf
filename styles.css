@@ -60,6 +60,27 @@ header > div {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+}
+.custom-shape-divider-bottom-1760879187 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1000;
+}
+
+.custom-shape-divider-bottom-1760879187 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+}
+
+.custom-shape-divider-bottom-1760879187 .shape-fill {
+    fill: var(--secondary-color);
 }
 .hero-overlay {
   position: absolute;
