@@ -459,6 +459,13 @@ header > div {
     transition: background-color 0.3s ease;
   }
 }
+.contact-btn{
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 footer {
   min-height: 400px;
   display: flex;
