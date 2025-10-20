@@ -15,7 +15,7 @@
         <div class="container">
             <div style=" display: flex; align-items: center; gap: 10px;">
                 <img src="assets/ealf-logo-small.jpg" alt="ealf logo" class="logo">
-                <h1>EALF</h1>
+                <!-- <h1>EALF</h1> -->
             </div>
             <nav class="main-nav">
                 <ul>
@@ -409,14 +409,26 @@
             fadeEffect: {
                 crossFade: true,
             },
+            zoom: {
+                maxRatio: 1.2, // Maximum zoom level
+                minRatio: 1,   // Minimum zoom level (original size)
+            },
+            // effect: "creative",
+            // grabCursor: true,
+            // creativeEffect: {
+            //     prev: {
+            //         translate: [0, 0, -400],
+            //         scale: 0.8,
+            //     },
+            //     next: {
+            //         translate: [0, 0, -400],
+            //         scale: 1.2,
+            //     },
+            // },
             speed: 2000,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
-            },
-            zoom: {
-                maxRatio: 1.2, // Maximum zoom level
-                minRatio: 1,   // Minimum zoom level (original size)
             },
             pagination: {
                 el: ".swiper-pagination",

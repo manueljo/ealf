@@ -33,7 +33,7 @@ header > div {
   align-items: center;
 }
 .logo {
-  width: 35px;
+  width: 60px;
 }
 .main-nav ul {
   display: flex;
@@ -63,24 +63,24 @@ header > div {
   position: relative;
 }
 .custom-shape-divider-bottom-1760879187 {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 1000;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1000;
 }
 
 .custom-shape-divider-bottom-1760879187 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 63px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
 }
 
 .custom-shape-divider-bottom-1760879187 .shape-fill {
-    fill: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 .hero-overlay {
   position: absolute;
@@ -91,7 +91,7 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: start;
-  padding:20px;
+  padding: 20px;
   flex-direction: column;
   color: var(--secondary-color);
   background-image: linear-gradient(rgba(5, 26, 5, 0.486));
@@ -125,6 +125,11 @@ header > div {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 5s ease;
+}
+.swiper-slide-active img {
+  transform: scale(1.1);
 }
 .partners-section {
   padding-block: 50px;
@@ -251,7 +256,7 @@ header > div {
 .accomplishment-section {
   padding-block: 50px;
 }
-.accomplishment-section h2{
+.accomplishment-section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 800;
@@ -274,7 +279,7 @@ header > div {
   /* overflow: hidden; */
   position: relative;
 }
-.accomplishment{
+.accomplishment {
   position: absolute;
   bottom: -5px;
   right: -5px;
@@ -282,16 +287,16 @@ header > div {
   padding: 10px 40px;
   border-radius: 10px;
 }
-.accomplishment-heading{
+.accomplishment-heading {
   font-size: 45px;
   font-weight: 700;
   line-height: 1em;
   margin-bottom: 15px;
 }
-.accomplishment span{
+.accomplishment span {
   font-size: 60px;
   font-weight: 600;
-  color: #FF5454;
+  color: #ff5454;
 }
 .featured-project {
   margin-bottom: 20px;
@@ -490,11 +495,11 @@ footer {
 
 @media (max-width: 768px) {
   .overview-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
-  width: 100%;
-}
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+  }
   footer {
     min-height: 400px;
     display: flex;
