@@ -23,6 +23,7 @@ body {
 }
 header {
   background-color: var(--primary-color);
+  background-image: linear-gradient(184deg, #068C4D 0%, #09351D 100%);
   color: white;
   text-align: center;
   margin: 0 auto;
@@ -32,8 +33,11 @@ header > div {
   justify-content: space-between;
   align-items: center;
 }
+header .container {
+  padding-block: 0;
+}
 .logo {
-  width: 60px;
+  width: 103px;
 }
 .main-nav ul {
   display: flex;
@@ -551,6 +555,12 @@ footer {
 .about-content {
   padding-block: 30px;
 }
+.about-heading{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -559,20 +569,21 @@ footer {
   max-width: 1200px;
 }
 .grid-item {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-weight: 600;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* text-align: center; */
+  /* font-weight: 600; */
   color: #1f2937;
   display: flex;
   justify-content: start;
-  align-items: center;
+  /* align-items: center; */
   /* height: 200px; */
   flex-direction: column;
   transition: transform 0.3s ease-in-out;
 }
+
 .grid-item:hover {
   transform: translateY(-5px);
 }
