@@ -428,6 +428,33 @@ header .container {
   height: auto;
   margin-bottom: 15px;
 }
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  /* width: 100%; */
+  max-width: 1200px;
+}
+.team-grid-item {
+  background-color: #ffffff;
+  color: #1f2937;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+.team-img-container{
+  /* width: 100%; */
+  height: 300px;
+}
+.team-img-container img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .latest-news {
   padding-top: 50px;
   padding-bottom: 100px;
